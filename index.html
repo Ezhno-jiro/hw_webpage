@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Network Security — Homework 01</title>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">Saw Eh Tar Moo | HND5</a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="network-security.html">Network Security</a>
+            <a href="sdlc.html">SDLC</a>
+            <a href="web-dev.html" class="active">Website Development</a>
+        </nav>
+    </header>
+
+    <div class="page-hero">
+        <p class="breadcrumb">
+            <a href="index.html">Home</a> &nbsp;/&nbsp;
+            <a href="web-dev.html">Network Security</a> &nbsp;/&nbsp;
+            Homework 01
+        </p>
+        <h1>Homework 01<br><span>19/02 & 23/02 tasks, </span><h3>Q&A</h3></h1>
+        <!-- <p>3 questions and answers covering <br>Types of Security Risks, Network Monitoring System, Incorrect configuration(Firewall, VPN&Servers, De-Militarized Zone(DMZ), Network Address Translation(NAT))</p> -->
+    </div>
+
+    <div class="qa-list">
+        <div class="#">19/02 Tasks</div>
+        <!-- Q1 -->
+        <div class="qa-card">
+            <div class="qa-question">
+                <div class="qa-q-num">Q1</div>
+                <div class="qa-question-text">A Discussion of the different types of security risks to an organisation</div>
+            </div>
+            <div class="qa-answer">
+                <p>
+                    <i>
+                        (T6-Introduction tIT security Controls, Page1)
+                        (T7-Introduction tOrgaizational Security, Page 2) 
+                    </i> <br>
+                    <b>1.2. Organizational Risks & Threats</b> <br>
+                        <u>Internal Threats:</u> <br>
+                        <ul>
+                            <li>Careless employees (weak passwords, falling for phishing).</li>
+                            <li>Malicious insiders (stealing or leaking sensitive data).</li>
+                            <li>Misconfigured systems or lack of updates.</li>
+                        </ul>
+                        <u>External Threats:</u> <br>
+                        <ul>
+                            <li>Hackers and cybercriminals launching attacks (malware, ransomware, phishing).</li>
+                            <li>Competitors or nation-state actors.</li>
+                            <li>Natural disasters (floods, earthquakes) affecting IT infrastructure.</li>
+                        </ul>
+                        Example: An employee downloads malware accidentally (internal – negligence), while
+                        hackers try texploit vulnerabilities in the company’s web server (external –
+                        cyberattack). <br>
+                        <br>
+                    <b>1.3. Threats & Attacks Overview</b> <br>
+                        <u>Organisations face many threats, both internal and external: </u><br>
+                        <ul>
+                            <li>Malware</li>
+                                Malicious software such as viruses, worms, trojans, and ransomware.
+                                Example: Ransomware encrypts files and demands payment tunlock them.<br>
+                            <li>Phishing & Social Engineering</li>
+                                Attackers trick employees intrevealing sensitive information, often via fake emails or messages.
+                                Example: A phishing email that looks like it comes from HR asking for login details. <br>
+                            <li>Insider Threats</li>
+                                Employees, contractors, or partners whmisuse their access.
+                                Example: An employee selling company secrets tcompetitors. <br>
+                            <li>Denial of Service (DoS/DDoS)</li>
+                                Attackers flood a system with traffic tmake it unavailable.
+                                Example: A website being taken offline during a product launch. <br>
+                        </ul>
+                </p>
+                <!-- <p>Second paragraph of your answer goes here if needed.</p> -->
+            </div>
+        </div>
+
+        <!-- Q2 -->
+        <div class="qa-card">
+            <div class="qa-question">
+                <div class="qa-q-num">Q2</div>
+                <div class="qa-question-text">An analysis, with reasons, of the benefits of implementing network monitoring systems.</div>
+            </div>
+            <div class="qa-answer">
+                <p>
+                    <i>(Topic6-Introduction to IT Security Controls, Page 4-5-6)</i><br>
+                    <b>Benefits of implementing Network Monitoring Systems</b>
+                    <ul>
+                        <u>Log Management & SIEM</u>
+                        <li>Centralised collection of logs from servers, applications, and network devices</li>
+                        <li>Real-time monitoring and threat detection</li>
+                        <li>Faster incident response</li>
+                        <li>Improved visibility across the organisation</li>
+                        <li>Supports regulatory compliance and audit reporting</li>
+                        <u>IDS / IPS (Intrusion Detection & Prevention)</u>
+                        <li>Detects suspicious network activity (IDS)</li>
+                        <li>Automatically blocks malicious traffic (IPS)</li>
+                        <li>Reduces risk of unauthorised access</li>
+                        <li>Protects against brute-force attacks and network intrusions</li>
+                        <u>Vulnerability Scanning & Penetration Testing</u>
+                        <li>Identifies system weaknesses before attackers exploit them</li>
+                        <li>Proactive risk reduction</li>
+                        <li>Penetration testing simulates real-world attacks</li>
+                        <li>Improves overall security posture</li>
+                        <u>Patch Management</u>
+                        <li>Fixes known vulnerabilities through regular updates</li>
+                        <li>Prevents attacks targeting outdated software</li>
+                        <li>Improves system stability and performance</li>
+                        <li>Ensures structured and controlled update process</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+
+        <!-- Q3 -->
+        <div class="qa-card">
+            <div class="qa-question">
+                <div class="qa-q-num">Q3</div>
+                <div class="qa-question-text">A Discussion of the potential security impact of incorrect configuration of:
+                    <br>
+                    <ul>
+                        <li>Firewall Policy များ</li>
+                        <li>Third Party VPN Clients & Servers</li>
+                        <li>De-Militarized Zone(DMZ)</li>
+                        <li>Network Address Translation(NAT)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="qa-answer">
+                <p>Write your answer here.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="qa-list">
+        <div class="#">23/02 Tasks</div>
+        <!-- Q1 -->
+        <div class="qa-card">
+            <div class="qa-question">
+                <div class="qa-q-num">Q1</div>
+                <div class="qa-question-text">Write your first question here?</div>
+            </div>
+            <div class="qa-answer">
+                <p>Write your answer here. You can have multiple paragraphs by duplicating the &lt;p&gt; tag below.</p>
+                <p>Second paragraph of your answer goes here if needed.</p>
+            </div>
+        </div>
+
+        <!-- Q2 -->
+        <div class="qa-card">
+            <div class="qa-question">
+                <div class="qa-q-num">Q2</div>
+                <div class="qa-question-text">Write your second question here?</div>
+            </div>
+            <div class="qa-answer">
+                <p>Write your answer here.</p>
+            </div>
+        </div>
+
+        <!-- Q3 -->
+        <div class="qa-card">
+            <div class="qa-question">
+                <div class="qa-q-num">Q3</div>
+                <div class="qa-question-text">Write your third question here?</div>
+            </div>
+            <div class="qa-answer">
+                <p>Write your answer here.</p>
+            </div>
+        </div>
+
+        <!-- Q4 -->
+        <div class="qa-card">
+            <div class="qa-question">
+                <div class="qa-q-num">Q4</div>
+                <div class="qa-question-text">Write your fourth question here?</div>
+            </div>
+            <div class="qa-answer">
+                <p>Write your answer here.</p>
+            </div>
+        </div>
+
+        <!-- Q5 -->
+        <div class="qa-card">
+            <div class="qa-question">
+                <div class="qa-q-num">Q5</div>
+                <div class="qa-question-text">Write your fifth question here?</div>
+            </div>
+            <div class="qa-answer">
+                <p>Write your answer here.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Your Name &mdash; HND5 | All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
