@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Network Security — Homework 01</title>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">Saw Eh Tar Moo | HND5</a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="network-security.html" class="active">Network Security</a>
+            <a href="sdlc.html">SDLC</a>
+            <a href="web-dev.html" >Website Development</a>
+        </nav>
+    </header>
+
+    <div class="page-hero">
+        <p class="breadcrumb">
+            <a href="index.html">Home</a> &nbsp;/&nbsp;
+            <a href="network-security.html">Network Security</a> &nbsp;/&nbsp;
+            Homework 01
+        </p>
+        <h1>Homework 01<br><span>19/02 & 23/02 tasks, </span><h3>Draft Summary Notes</h3></h1>
+        <!-- <p>3 questions and answers covering <br>Types of Security Risks, Network Monitoring System, Incorrect configuration(Firewall, VPN&Servers, De-Militarized Zone(DMZ), Network Address Translation(NAT))</p> -->
+    </div>
+
+    <div class="qa-list">
+        <div class="#">19/02 Tasks</div>
+        <!-- Q1 -->
+        <div class="qa-card">
+            <div class="qa-question">
+                <div class="qa-q-num">Q1</div>
+                <div class="qa-question-text">A Discussion of the different types of security risks to an organisation</div>
+            </div>
+            <div class="qa-answer">
+                <p>
+                    <i>
+                        (T6-Introduction tIT security Controls, Page1)
+                        (T7-Introduction tOrgaizational Security, Page 2) 
+                    </i> <br> <br>
+                    <b>1.2. Organizational Risks & Threats</b> <br>
+                        <u>Internal Threats:</u> <br>
+                        <ul>
+                            <li>Careless employees (weak passwords, falling for phishing).</li>
+                            <li>Malicious insiders (stealing or leaking sensitive data).</li>
+                            <li>Misconfigured systems or lack of updates.</li>
+                        </ul>
+                        <u>External Threats:</u> <br>
+                        <ul>
+                            <li>Hackers and cybercriminals launching attacks (malware, ransomware, phishing).</li>
+                            <li>Competitors or nation-state actors.</li>
+                            <li>Natural disasters (floods, earthquakes) affecting IT infrastructure.</li>
+                        </ul>
+                        Example: An employee downloads malware accidentally (internal – negligence), while
+                        hackers try texploit vulnerabilities in the company’s web server (external –
+                        cyberattack). <br>
+                        <br>
+                    <b>1.3. Threats & Attacks Overview</b> <br>
+                        <u>Organisations face many threats, both internal and external: </u><br>
+                        <ul>
+                            <li>Malware</li>
+                                Malicious software such as viruses, worms, trojans, and ransomware.
+                                Example: Ransomware encrypts files and demands payment tunlock them.<br>
+                            <li>Phishing & Social Engineering</li>
+                                Attackers trick employees intrevealing sensitive information, often via fake emails or messages.
+                                Example: A phishing email that looks like it comes from HR asking for login details. <br>
+                            <li>Insider Threats</li>
+                                Employees, contractors, or partners whmisuse their access.
+                                Example: An employee selling company secrets tcompetitors. <br>
+                            <li>Denial of Service (DoS/DDoS)</li>
+                                Attackers flood a system with traffic tmake it unavailable.
+                                Example: A website being taken offline during a product launch. <br>
+                        </ul>
+                </p>
+                <!-- <p>Second paragraph of your answer goes here if needed.</p> -->
+            </div>
+        </div>
+
+        <!-- Q2 -->
+        <div class="qa-card">
+            <div class="qa-question">
+                <div class="qa-q-num">Q2</div>
+                <div class="qa-question-text">An analysis, with reasons, of the benefits of implementing network monitoring systems.</div>
+            </div>
+            <div class="qa-answer">
+                <p>
+                    <i>(Topic6-Introduction to IT Security Controls, Page 4-5-6)</i><br> <br>
+                    <b>Benefits of implementing Network Monitoring Systems</b>
+                    <ul>
+                        <u>Log Management & SIEM</u>
+                        <li>Centralised collection of logs from servers, applications, and network devices</li>
+                        <li>Real-time monitoring and threat detection</li>
+                        <li>Faster incident response</li>
+                        <li>Improved visibility across the organisation</li>
+                        <li>Supports regulatory compliance and audit reporting</li>
+                        <u>IDS / IPS (Intrusion Detection & Prevention)</u>
+                        <li>Detects suspicious network activity (IDS)</li>
+                        <li>Automatically blocks malicious traffic (IPS)</li>
+                        <li>Reduces risk of unauthorised access</li>
+                        <li>Protects against brute-force attacks and network intrusions</li>
+                        <u>Vulnerability Scanning & Penetration Testing</u>
+                        <li>Identifies system weaknesses before attackers exploit them</li>
+                        <li>Proactive risk reduction</li>
+                        <li>Penetration testing simulates real-world attacks</li>
+                        <li>Improves overall security posture</li>
+                        <u>Patch Management</u>
+                        <li>Fixes known vulnerabilities through regular updates</li>
+                        <li>Prevents attacks targeting outdated software</li>
+                        <li>Improves system stability and performance</li>
+                        <li>Ensures structured and controlled update process</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+
+        <!-- Q3 -->
+        <div class="qa-card">
+            <div class="qa-question">
+                <div class="qa-q-num">Q3</div>
+                <div class="qa-question-text">A Discussion of the potential security impact of incorrect configuration of:
+                    <br>
+                    <ul>
+                        <li>Firewall Policy များ</li>
+                        <li>Third Party VPN Clients & Servers</li>
+                        <li>De-Militarized Zone(DMZ)</li>
+                        <li>Network Address Translation(NAT)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="qa-answer">
+                <p>
+                    <i>(Topic3-Firewall)</i><br> <br>
+                    <b>Potential Security Impact of Incorrect Configuration</b>
+                    <ul>
+                        <u>Firewall Policy</u>
+                        <li>Firewall = first line of defense</li>
+                        <li>Too loose rules - hackers can access private network</li>
+                        <li>Too strict rules - block legitimate users & disrupt services.</li>
+                        <li>Risk - Data theft or complete service downtimes.</li>
+                        <u>Third-party VPN Clients & Servers</u>
+                        <li>Vpn creates secure tunnel for remote access</li>
+                        <li>Weak encryption or outdates servers - attackers can hijack connections</li>
+                        <li>Misconfiguration may allow unauthorized access</li>
+                        <li>Risks - Outsiders gain full access to internal systems</li>
+                        <u>De-Militarized Zone (DMZ)</u>
+                        <li>DMZ hosts public-facing servers (eg. websites.)</li>
+                        <li>Poor separation from internal network - attackers can move inside</li>
+                        <li>Compromised website may lead to internal database breach.</li>
+                        <li>Risks- Small breach becomes company-wide attack</li>
+                        <u>Network Address Translation(NAT)</u>
+                        <li>NAT hides internal IP addresses from public internet.</li>
+                        <li>Incorrect static NAT /port forwarding - exposes private devices.</li>
+                        <li>Internal devices (pinter, camers, etc.) become publicly accessible.</li>
+                        <li>Risks - Unauthorized external access to internal resources.</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="qa-list">
+        <div class="#">23/02 Tasks</div>
+        <!-- Q1 -->
+        <div class="qa-card">
+            <div class="qa-question">
+                <div class="qa-q-num">Q1</div>
+                <div class="qa-question-text">A review of the current risk assessment</div>
+            </div>
+            <div class="qa-answer">
+                <p>
+                    <i>(Topic7-Introduction to Organizational Security, page6-7, 1.7-Risk Management in Security)</i><br> <br>
+                    <b>An example review of current Risk Accessment</b>
+                    <ul>
+                        <u>The organization follows a structured risk managment approach aligned with ISO 27001 standards for information security</u>
+                        <li>the process begins with establishing context in which the scope of the assessment and legal/regulatory requirements are clearly defined.</li>
+                        <li>Critical <b>assests</b> such as databases, servers, applications and staff are identified.</li>
+                        <li>Potential <b>threats</b>(e.g phishing, ransomware, insider threats, power outages) are analysed.</li>
+                        <li>Existing <b>vulnerabilities</b> (e.g outdated software, weak passwords, lack of staff training) are identified.</li>
+                        <li>Risk is calculated using the formula -  <br> 
+                            Risk = Threat x Vulnerability x Impact</li>
+                        <li>A Likelihood vs. Impact matix is used to prioritise risks as Low, Medium, or High.</li>
+                        <li>Based on the anlaysis, a Risk Treatment Plan is developed using four strategies - <br>
+                            1.<b>Avoid</b> - Eliminate the risks <br>
+                            2.<b>Mitigate</b> - Reduce likelihood or impact (e.g staff training, firewalls) <br>
+                            3.<b>Trnasfer</b> - Shift risk (e.g insurance) <br>
+                            4.<b>Accept</b> - Acknowledge and monitor low-level risks. <br>
+                        </li>
+                        <u>In addition, the orgainsation supports risk management through - </u>
+                        <li><b>Business COntinuity Planning (BCP)</b> - Ensure critical operations continue during disruptions </li>
+                        <li><b>Disaster Recovery Planning(DRP)</b> - Focuses on resotring IT systems and data after a disaster</li>
+                    </ul>
+                </p>
+                <!-- <p>Second paragraph of your answer goes here if needed.</p> -->
+            </div>
+        </div>
+
+        <!-- Q2 -->
+        <div class="qa-card">
+            <div class="qa-question">
+                <div class="qa-q-num">Q2</div>
+                <div class="qa-question-text">An explanation of data protection processes and regulations applied</div>
+            </div>
+            <div class="qa-answer">
+                <p>
+                    <i>(Topic6-Introduction to IT security controls, Page2-8)</i> <br> <br>
+                    <!-- <h3>Data Protection processes & Regulations applied</h3> -->
+                    <b><u>Data Protection Processes</u></b> <br>
+                    <ul>
+                        <b>Security Controls</b>
+                        <li>Administrative: Security policies, staff training, access control policies</li>
+                        <li>Technical: Firewalls, IDS/IPS, encryption, Multi-Factor Authentication (MFA)</li>
+                        <li>Physical: Locked server rooms, CCTV, ID badges, biometric access</li>
+                        <b>Access Control</b>
+                        <li>Ensures only authorised users can access data</li>
+                        <li>Authentication: Passwords, biometrics, MFA</li>
+                        <li>Authorization:
+                            RBAC (Role-Based Access Control) – access based on job role,
+                            ABAC (Attribute-Based Access Control) – access based on attributes (user, device, location)
+                        </li>
+                        <b>Encryption & Data Protection</b>
+                        <li>Data at rest: Encryption of stored data (databases, hard drives)</li>
+                        <li>Data in Transit: SSL/TLS or VPN for secure communication</li>
+                        <li>Hashing: Protects passwords by storing hashed values</li>
+                        <b>Backup & Recovery</b>
+                        <li>Backup types: Full, Incremental, Differential</li>
+                        <li>Disaster Recovery Plan (DRP) to restore IT systems after failures</li>
+                        <li>RTO: Maximum acceptable downtime</li>
+                        <li>RP0: Maximum acceptable data loss</li>
+                        <b>Security Monitoring</b>
+                        <li>Log Management & SIEM for monitoring system activities</li>
+                        <li>IDS/IPS to detect and prevent cyber attacks</li>
+                        <li>Patch management to update systems and fix vulnerabilities</li>
+                    </ul> <br>
+                    <b><u>Data Protection Regulations / Frameworks</u></b>
+                    <ul>
+                        <li>ISO 27001: International standard for managing information security</li>
+                        <li>NIST Cybersecurity Framework: Security framework with functions - Identify, Protect, Detect, Respond, Recover</li>
+                        <li>GDPR: EU regulation protecting personal data and requiring breach reporting within 72 hours</li>
+                        <li>HIPAA: US regulation protecting healthcare data with strict security safeguards.</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+
+        <!-- Q3 -->
+        <div class="qa-card">
+            <div class="qa-question">
+                <div class="qa-q-num">Q3</div>
+                <div class="qa-question-text">A summary of an appropriate risk-management strategy or applied ISO standard and its application to IT security.</div>
+            </div>
+            <div class="qa-answer">
+                <p>
+                    <i>(Topic7-Introduction to Organizational Security, Page3-7)</i> <br> <br>
+                    <ul>
+                        <b>ISO 27001 is an international standard used to manage and protect information security through structured risk management</b> <br>
+                        <b><u>Risk Assessment Proecss</u></b>
+                        <li>Establish Context: Define the scope of security and identify legal or regulatory requirements</li>
+                        <li>Asset Identification: Identify important assets such as databases, servers, applications, and employees</li>
+                        <li>Threat Identification: Identify potential threats such as malware, phishing, insider threats, or power outages</li>
+                        <li>Vulnerability Identification: Identify weaknesses like outdated software, weak passwords, or lack of staff training</li>
+                        <li>Risk Analysis: Evaluate the likelihood and impact of risks using a risk matrix (Low, Medium, High)</li>
+                        <b><u>Risk Treatment Strategies</u></b>
+                        <li>Avoid: Eliminate the activity that causes the risk</li>
+                        <li>Mitigate: Reduce the likelihood or impact (e.g., staff training, firewalls)</li>
+                        <li>Transfer: Shift the risk to another party (e.g., insurance)</li>
+                        <li>Accept: Accept the risk if it is low and manageable</li>
+                        <b><u>Supporting Security Measures</u></b>
+                        <li>Security policies and procedures help protect the CIA triad (Confidentiality, Integrity, Availability)</li>
+                        <li>Business Continuity Planning (BCP): Ensures critical business operations continue during disruptions</li>
+                        <li>Disaster Recovery Planning (DRP): Focuses on restoring IT systems and data after a disaster</li>
+                        <b><u>Application to IT security</u></b>
+                        <li>Helps organisations systematically identify and manage security risks</li>
+                        <li>Improves protection of sensitive data and IT infrastructure</li>
+                        <li>Ensures compliance with international security standards and regulations</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+
+        <!-- Q4 -->
+        <div class="qa-card">
+            <div class="qa-question">
+                <div class="qa-q-num">Q4</div>
+                <div class="qa-question-text">An analysis of the possible impact on security, following the results of an IT security audit</div>
+            </div>
+            <div class="qa-answer">
+                <p>
+                    <i>Topic8-Access Control & Identity, Page </i> <br> <br>
+                    <ul>
+                        <b>Security Audit Findings</b> <br> 
+                        <li>An IT security audit evaluates policies, procedures, and technical controls to identify vulnerabilities and compliance gaps</li>
+                        <li>Audits may include vulnerability scanning, penetration testing, and configuration reviews</li> <br>
+                        <u>Impact on Access Control & Identity Management</u>
+                        <li>Weak authentication methods or lack of Multi-Factor Authentication (MFA) may allow unauthorized access</li>
+                        <li>Poor Role-Based Access Control (RBAC) can lead to excessive permissions, increasing risk of insider threats</li>
+                        <li>Ineffective Identity and Access Management (IAM) may result in weak user account management</li>
+
+                        <u>Impact on Monitoring and Detectiong</u>
+                        <li>Lack of proper log monitoring may prevent early detection of cyberattacks</li>
+                        <li>Absence of SIEM systems can reduce the organization’s ability to detect suspicious activities in real time</li>
+                        <li>Weak monitoring increases the risk of undetected intrusions and data breaches</li>
+
+                        <u>Impact on Incident Response</u>
+                        <li>Without a structured incident response plan, security incidents may spread and cause greater damage</li>
+                        <li>Poor response procedures can delay containment, recovery, and investigation</li>
+
+                        <u>Compliance and Legal Impact</u>
+                        <li>Failure to meet standards such as ISO 27001, NIST, GDPR, or HIPAA may result in regulatory penalties</li>
+                        <li>Non-compliance can damage the organization’s reputation and reduce customer trust</li>
+
+                        <u>Operational & Organizational Impact</u> <br>
+                        Security weaknesses identified by the audit may lead to <br>
+                        <li>Data breaches</li>
+                        <li>Financial Losses</li>
+                        <li>Service Downtime</li>
+                        <li>Legal Consequences</li> <br>
+                        <b>Improvement Actions</b>
+                        <li>Strengthen access controls and implement MFA</li>
+                        <li>Improve monitoring through SIEM and regular log analysis</li>
+                        <li>Update policies, provide staff security training, and implement continuous security audits</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+
+        <!-- Q5 -->
+        <div class="qa-card">
+            <div class="qa-question">
+                <div class="qa-q-num">Q5</div>
+                <div class="qa-question-text">A recommendation, with supported reasons, on how the IT security can be aligned with its organisational policy. You should detail explicitly the security impact if there is a misalignment</div>
+            </div>
+            <div class="qa-answer">
+                <p>
+                    <b>Recommendation for Alignment</b> <br>
+                    <ul>
+                        <u>Develop Clear Security Policies</u>
+                        <li>Organisations should establish clear policies such as Access Control Policy, Password Policy, Acceptable Use Policy (AUP), and Remote Work Policy</li>
+                        <li>These policies define how employees should use IT systems and handle sensitive data</li>
+                        <u>Implement Strong Access Control</u>
+                        <li>Use Role-Based Access Control (RBAC) to ensure employees only access information necessary for their job</li>
+                        <li>Implement Multi-Factor Authentication (MFA) to strengthen user authentication</li>
+                        <u>Integrate Security Standards</u>
+                        <li>Align IT security practices with recognised frameworks such as ISO 27001 or NIST Cybersecurity Framework</li>
+                        <li>This ensures systematic risk management and compliance with security best practices</li>
+                        <u>Continuous Monitoring and Auditing</u>
+                        <li>Use log monitoring, SIEM systems, and regular security audits to ensure policies are properly enforced</li>
+                        <li>Regular reviews help identify security gaps and maintain compliance</li>
+                        <u>Employee Security Awareness Training</u>
+                        <li>Train employees on phishing awareness, password management, and data protection policies</li>
+                        <li>Staff awareness reduces human errors that could lead to security incidents</li>
+                    </ul> <br>
+                    <b>Security Impact if Misalignment Occurs</b>
+                    <ul>
+                        <u>Unauthorized Access</u>
+                        <li>If IT systems are not aligned with access control policies, employees may gain access to sensitive data beyond their roles</li>
+                        <u>Data Breaches</u>
+                        <li>Weak implementation of policies (e.g., no encryption or weak passwords) can expose confidential information</li>
+                        <u>Regulatory and Legal Risks</u>
+                        <li>Misalignment with organisational policies may result in non-compliance with regulations such as GDPR or ISO 27001, leading to legal penalties</li>
+                        <u>Operational Disruptions</u>
+                        <li>Poor security implementation may lead to cyberattacks, malware infections, or system downtime</li>
+                        <u>Reputation and Financial Damage</u>
+                        <li>Security incidents caused by policy misalignment can reduce customer trust and cause financial losses</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Saw Eh Tar Moo &mdash; HND5 | All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
